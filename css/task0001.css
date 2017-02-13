@@ -1,0 +1,165 @@
+/*用两种方法来实现一个背景色为红色、宽度为960px的<DIV>在浏览器中居中*/
+.d1,
+.d2 {
+    width: 960px;
+    background: #ff0000;
+    border: 4px solid #000000;
+}
+.d1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3px;
+}
+.container1 {
+    position: relative;
+}
+.d2 {
+    position: absolute;
+    top: auto;
+    left: 50%;
+    margin-left: -480px;
+}
+/*在不使用border-radius的情况下实现一个可复用的高度和宽度都自适应的圆角矩形*/
+.container2 {
+    margin-top: 100px;
+}
+.t2,
+.b2,
+.t3,
+.b3 {
+    height: 1px;
+}
+.middle {
+    height: 50px;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+.t3,
+.b3 {
+    margin: 0px 1px;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+.t2,
+.b2 {
+    margin: 0px 2px;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+.t1,
+.b1 {
+    margin: 0px 3px;
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+/*用两种不同的方法来实现一个两列布局，其中左侧部分宽度固定、右侧部分宽度随浏览器宽度的变化而自适应变化*/
+.container3 {
+    margin-top: 50px;
+}
+.left {
+    float: left;
+    width: 100px;
+    height: 100px;
+    color: #ffffff;
+    background: #ff0000;
+}
+.right {
+    height: 100px;
+    margin-left: 100px;
+    color: #ffffff;
+    background: #0000ff;
+}
+
+.container4 {
+    position: relative;
+    margin-top:50px;
+}
+.set-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    color: #ffffff;
+    background: #ff0000;
+}
+.set-right {
+    margin-left: 100px;
+    height: 100px;
+    color: #ffffff;
+    background: #0000ff;
+}
+/*用两种不同的方式来实现一个三列布局，其中左侧和右侧的部分宽度固定，中间部分宽度随浏览器宽度的变化而自适应变化*/
+/*第一个div元素向左浮动，第二个div元素向右浮动*/
+.container5 {
+    margin-top: 50px;
+}
+.ca {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #0000ff;
+}
+.cc {
+    margin: 0px 100px;
+    height: 100px;
+    background: #ff0000;
+}
+.cb {
+    float: right;
+    width: 100px;
+    height: 100px;
+    background: #0000ff;
+}
+/*左右列绝对定位*/
+.container6 {
+    position: relative;
+    margin-top: 50px;
+    clear: both;
+}
+.c1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.c3 {
+    position: absolute;
+    top: 0;
+    right:0;
+}
+.c1,
+.c3 {
+    width: 100px;
+    height: 100px;
+    background: #0000ff;
+}
+.c2 {
+    height: 100px;
+    background: #ff0000;
+}
+.container7 {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 50px;
+    margin-right: 70%;
+    background: #ff0000;
+}
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9 {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 40px;
+    margin: 20px 10px;
+    background: #0000ff;
+}
